@@ -1,10 +1,19 @@
 {
   "name": "pure-react",
   "version": "0.0.0",
+  "main": "lib/component.js",
   "scripts": {
     "build": "babel src/ -d lib/",
     "build-examples": "babel examples/ -d examples-dist/",
     "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "object-assign": "*",
+    "react-listener-component": "1.1.0",
+    "shallowequal": "^0.2.2"
+  },
+  "peerDependencies": {
+    "react": "0.14.x"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
